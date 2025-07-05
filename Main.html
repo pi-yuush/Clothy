@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clothly</title>
+  <link rel="stylesheet" href="Main.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+       <h1 class="logo">Clothly</h1>
+      <nav class="menu">
+       
+        <a href="Main.html">Home</a>
+        <a href="Categories/Categories.html">Categories</a>
+        <a href="Offer/Offer.html">Offers</a>
+        <a href="Contact/contact.html">Contact</a>
+
+        <!-- Cart Icon with Counter -->
+       <div class="cart-container">
+  <a href="/Main/Cart/Cart.html" class="cart-link">
+    <svg xmlns="http://www.w3.org/2000/svg" class="cart-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+    </svg>
+    <span class="cart-count" id="cart-count">0</span>
+    <button style="background-color: black; color: aqua; border-radius: 30px 30px; cursor: pointer;" onclick="addToCart('Stylish Kurti', '₹499', 'kurti.jpg')">Add to Cart</button>
+
+  </a>
+</div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <h2>Trendy Styles for Every Occasion</h2>
+      <p>Flat 50% Off on First Order</p>
+      <a href="#" class="btn">Start Shopping</a>
+    </div>
+  </section>
+
+  <!-- Category Highlights -->
+  <section class="categories">
+    <h2 class="section-title">Top Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="shopping men.webp" alt="Men"/>
+        <h3>Men</h3>
+      </div>
+      <div class="category-card">
+        <img src="shopping women.webp" alt="Women"/>
+        <h3>Women</h3>
+      </div>
+      <div class="category-card">
+        <img src="shopping kids.webp" alt="Kids"/>
+        <h3>Kids</h3>
+      </div>
+      <div class="category-card">
+        <img src="shopping sale.webp" alt="Sale"/>
+        <h3>Sale</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="kurti.jpg" alt="Product"/>
+        <h4>Stylish Kurti</h4>
+        <p>₹499</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="shirt.webp" alt="Product"/>
+        <h4>Casual Shirt</h4>
+        <p>₹599</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="jeans.jpg" alt="Product"/>
+        <h4>Denim Jeans</h4>
+        <p>₹899</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="printed.webp" alt="Product"/>
+        <h4>Printed Dress</h4>
+        <p>₹749</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Shop Links -->
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <div class="social-icons">
+          <a href="#">Facebook</a><br>
+          <a href="#">Instagram</a><br>
+          <a href="#">Twitter</a><br>
+          <a href="#">Youtube</a>
+        </div>
+        <p class="download-text">Download our App</p>
+        <div class="app-buttons">
+          <a href="#">Google Play Store</a><br>
+          <a href="#">App Store</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <p>Subscribe to get exclusive offers & updates:</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 Clothly. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+<script src="Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <section class="cart-page">
+  <h2 class="section-title">Your Shopping Cart</h2>
+
+  <div class="cart-container">
+    <!-- Sample cart item -->
+    <div class="cart-item">
+      <img src="kurti.jpg" alt="Stylish Kurti">
+      <div class="cart-details">
+        <h4>Stylish Kurti</h4>
+        <p>Price: ₹499</p>
+        <div class="quantity-control">
+          <button class="decrease">−</button>
+          <span class="quantity">1</span>
+          <button class="increase">+</button>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+    </div>
+
+    <!-- Repeat .cart-item for each product -->
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <h3>Total: ₹<span id="cart-total">499</span></h3>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
